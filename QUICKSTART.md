@@ -2,7 +2,7 @@
 
 [HTML загварыг нээх](https://itemuln.github.io/arc42_c4_template/) · [arc42](https://arc42.org/overview/) · [C4](https://c4model.com/)
 
-Өөрийн software architecture documentation-ийг Монгол хэлээр эхлүүлэх starter. 12 хэсэг бүр товч заавар, бөглөх талбар/хүснэгт, official section холбоостой. Агуулгаа AsciiDoc файлуудад бичиж, HTML болгон үүсгэнэ. Энэ repository нь бэлэн системийн тайлан биш.
+Өөрийн software architecture documentation-ийг Монгол хэлээр эхлүүлэх starter. 12 хэсэг бүр товч заавар, бөглөх талбар/хүснэгт, official section холбоостой. Агуулгаа AsciiDoc файлуудад бичиж, HTML болгон үүсгэнэ.
 
 ## Шууд эхлэх
 
@@ -22,7 +22,7 @@ npm run check
 npm run preview
 ```
 
-Дараа нь [http://127.0.0.1:8871](http://127.0.0.1:8871) нээ. Зогсоох: `Ctrl+C`. HTML уншихад backend, database, Docker хэрэггүй.
+Дараа нь [http://127.0.0.1:8871](http://127.0.0.1:8871) нээ.
 
 ## Өөрийн баримтыг бөглөх
 
@@ -32,7 +32,6 @@ npm run preview
 4. Чухал сонголтуудаа `documentation/adrs/` дотор ADR болгон хадгалж, §9-ийн include жагсаалтыг шинэчил.
 5. `npm run build` → `npm run check`; браузераа refresh хий. Шалгаагүй зүйл, санал, хэмжсэн үр дүнгээ тусад нь тэмдэглэ.
 
-Бүх 12 хэсгийг ижил уртаар бөглөх шаардлагагүй. Зөвхөн нэр томьёо солихоос илүүтэй бодит шаардлага, код, шийдвэр, runtime evidence-д тулгуурла.
 
 ## Файлын бүтэц
 
@@ -59,19 +58,19 @@ npm run diagrams
 npm run build
 ```
 
-Renderer pinned PlantUML jar-ийг official GitHub release-ээс татаж, Java/Docker дээр local render хийнэ. Diagram source гаднын rendering service рүү илгээгдэхгүй. Жишээ зураг нь бодит deployment эсвэл туршилтын нотолгоо биш.
+Renderer pinned PlantUML jar-ийг official GitHub release-ээс татаж, Java/Docker дээр local render хийнэ. 
 
 ## GitHub Pages
 
-`main` руу push хийхэд workflow `npm ci` → HTML build → check → Pages deployment ажиллана. GitHub **Settings → Pages → Source: GitHub Actions** сонгосон байх ёстой. Pull request дээр HTML build/check ажиллах боловч нийтлэхгүй. Actions-ийн ногоон төлөв нь document build-ийн шалгалт; таны системийн runtime test биш.
+`main` руу push хийхэд workflow `npm ci` → HTML build → check → Pages deployment ажиллана. 
+GitHub **Settings → Pages → Source: GitHub Actions** сонгосон байх ёстой. 
+Pull request дээр HTML build/check ажилна нийтлэхгүй. 
+Actions-ийн ногоон төлөв нь document build-ийн шалгалт; таны системийн runtime test биш.
 
 ## Эх сурвалж, лиценз, орчуулгын төлөв
-
-arc42 © **Gernot Starke, Peter Hruschka**; template adaptation **CC BY-SA 4.0**. [LICENSE.md](LICENSE.md) үзнэ үү. Системийн өөрийн агуулгын эрх тусдаа.
 
 - [Official arc42 overview](https://arc42.org/overview/), section бүрийн official холбоос баримтад бий.
 - [C4 model](https://c4model.com/) — diagram abstraction ба notation.
 - [Asciidoctor.js](https://docs.asciidoctor.org/asciidoctor.js/latest/) — AsciiDoc → HTML.
 - [bitsmuggler arc42/C4 example](https://github.com/bitsmuggler/arc42-c4-software-architecture-documentation-example) — document generation workflow-ийн reference.
 
-Албан бус Монгол adaptation, 2026-10-13. Товчилсон заавар болохоос official template-ийн өгүүлбэр бүрийн орчуулга биш. AI-assisted draft-ийг official section docs-той тулгасан; Монгол хэлний human review хүлээгдэж байна.
