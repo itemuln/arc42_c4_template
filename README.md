@@ -84,5 +84,3 @@ Repository-д эдгээр дөрвөн жишээ зураг, засварла�
 - [C4 model](https://c4model.com/) — архитектурын дүрслэл.
 - [Asciidoctor.js](https://docs.asciidoctor.org/asciidoctor.js/latest/) — AsciiDoc-оос HTML үүсгэх хэрэгсэл.
 - [bitsmuggler arc42/C4 example](https://github.com/bitsmuggler/arc42-c4-software-architecture-documentation-example) — Docs-as-Code workflow-ийн reference.
-
-arc42-ийн зохиогчид: **Gernot Starke, Peter Hruschka**. Монгол adaptation: **itemuln**, 2026-10-13; AI-assisted draft-ийг албан ёсны section заавартай тулгасан. Template-ийн adaptation нь **CC BY-SA 4.0**; build/check scripts болон системийн өөрийн агуулгын эрхийн дэлгэрэнгүйг [LICENSE.md](LICENSE.md)-д өгүүлэв.
