@@ -1,6 +1,6 @@
 # arc42 + C4 — Монгол starter ба HTML үүсгэгч
 
-[HTML загварыг нээх](https://itemuln.github.io/arc42_c4_template/) · [arc42](https://arc42.org/overview/) · [C4](https://c4model.com/)
+[HTML загварыг нээх](https://itemuln.github.io/idoc/) · [arc42](https://arc42.org/overview/) · [C4](https://c4model.com/)
 
 Өөрийн software architecture documentation-ийг Монгол хэлээр эхлүүлэх starter. 12 хэсэг бүр товч заавар, бөглөх талбар/хүснэгт, official section холбоостой. Агуулгаа AsciiDoc файлуудад бичиж, HTML болгон үүсгэнэ.
 
@@ -9,8 +9,8 @@
 Node.js 24 эсвэл шинэ хувилбар хэрэгтэй.
 
 ```bash
-git clone https://github.com/itemuln/arc42_c4_template.git
-cd arc42_c4_template
+git clone https://github.com/itemuln/idoc.git
+cd idoc
 npm ci
 npm run build
 npm run check

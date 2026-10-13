@@ -2,7 +2,7 @@
 
 **Software Project Documentation** хичээлийн хүрээнд боловсруулсан, software architecture documentation-ийг Монгол хэлээр бичихэд зориулсан загвар. arc42-ийн бүтэц, C4-ийн дүрслэл, Docs-as-Code аргачлалыг нэгтгэж, архитектурын баримтыг эх файлаас HTML болгон үүсгэж нийтлэх боломжтой.
 
-[HTML баримтыг үзэх](https://itemuln.github.io/arc42_c4_template/) · [Ашиглах заавар](QUICKSTART.md) · [Лиценз](LICENSE.md)
+[HTML баримтыг үзэх](https://itemuln.github.io/idoc/) · [Ашиглах заавар](QUICKSTART.md) · [Лиценз](LICENSE.md)
 
 ## Зорилго
 
