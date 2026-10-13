@@ -72,5 +72,3 @@ Actions-ийн ногоон төлөв нь document build-ийн шалгалт
 - [Official arc42 overview](https://arc42.org/overview/), section бүрийн official холбоос баримтад бий.
 - [C4 model](https://c4model.com/) — diagram abstraction ба notation.
 - [Asciidoctor.js](https://docs.asciidoctor.org/asciidoctor.js/latest/) — AsciiDoc → HTML.
-- [bitsmuggler arc42/C4 example](https://github.com/bitsmuggler/arc42-c4-software-architecture-documentation-example) — document generation workflow-ийн reference.
-
