@@ -1,0 +1,17 @@
+:lang: mn
+:doctype: book
+:toc: left
+:toclevels: 3
+:toc-title: Агуулга
+:figure-caption: Зураг
+:table-caption: Хүснэгт
+:example-caption: Жишээ
+:appendix-caption: Хавсралт
+:note-caption: Тэмдэглэл
+:tip-caption: Зөвлөгөө
+:important-caption: Чухал
+:warning-caption: Анхааруулга
+:caution-caption: Болгоомжлол
+:last-update-label: Сүүлд шинэчилсэн
+:version-label: Хувилбар
+:imagesdir: .

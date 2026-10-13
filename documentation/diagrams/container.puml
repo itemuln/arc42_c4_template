@@ -1,0 +1,31 @@
+@startuml
+!pragma layout smetana
+skinparam defaultFontName sans-serif
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam wrapWidth 240
+skinparam maxMessageSize 180
+skinparam rectangle {
+  BackgroundColor #438dd5
+  FontColor white
+  BorderColor #08427b
+}
+skinparam actor {
+  FontColor #08427b
+}
+title ЖИШЭЭ — C4 Container (өөрийн бүтцээр соль)
+actor "Хэрэглэгч\n[Person]" as user
+package "<color:#08427b>ТӨСЛИЙН СИСТЕМ — system boundary</color>" #white {
+  rectangle "ХЭРЭГЛЭГЧИЙН ИНТЕРФЕЙС\n[Container: application]\nБӨГЛӨХ: үүрэг / технологи" as ui
+  rectangle "API APPLICATION\n[Container: application]\nБӨГЛӨХ: үүрэг / технологи" as api
+  database "ӨГӨГДЛИЙН САН\n[Container: data store]\nБӨГЛӨХ: хадгалах мэдээлэл / технологи" as db #438dd5
+  ui --> api : БӨГЛӨХ: үйлдэл + протокол
+  api --> db : БӨГЛӨХ: үйлдэл + протокол
+}
+user --> ui : БӨГЛӨХ: үйлдэл
+legend bottom
+Container = application / data store; заавал Docker биш.
+Энэ generic UI/API/DB бүтэц заавал хэрэглэх архитектур биш.
+Жишээг өөрийн бодит building blocks-оор солино.
+endlegend
+@enduml

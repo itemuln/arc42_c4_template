@@ -1,0 +1,26 @@
+@startuml
+!pragma layout smetana
+skinparam defaultFontName sans-serif
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam wrapWidth 240
+skinparam maxMessageSize 180
+skinparam rectangle {
+  BackgroundColor #438dd5
+  FontColor white
+  BorderColor #08427b
+}
+skinparam actor {
+  FontColor #08427b
+}
+title ЖИШЭЭ — C4 System Context (өөрийн системээр соль)
+actor "Хэрэглэгч\n[Person]" as user
+rectangle "ТӨСЛИЙН СИСТЕМ\n[Software System]\nБӨГЛӨХ: үндсэн зорилго" as system #1168bd
+rectangle "ГАДНЫН СИСТЕМ\n[External Software System]\nБӨГЛӨХ: харилцах хөрш" as external #64748b
+user --> system : БӨГЛӨХ: хэрэглэгчийн үйлдэл
+system --> external : БӨГЛӨХ: мэдээлэл / харилцаа
+legend bottom
+Цэнхэр: баримтжуулж буй систем. Саарал: гаднын систем.
+Жишээ нь бодит систем эсвэл deployment-ийн нотолгоо биш.
+endlegend
+@enduml

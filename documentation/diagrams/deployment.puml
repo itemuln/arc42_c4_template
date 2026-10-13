@@ -1,0 +1,34 @@
+@startuml
+!pragma layout smetana
+skinparam defaultFontName sans-serif
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam wrapWidth 240
+skinparam maxMessageSize 180
+skinparam rectangle {
+  BackgroundColor #438dd5
+  FontColor white
+  BorderColor #08427b
+}
+skinparam actor {
+  FontColor #08427b
+}
+title ЖИШЭЭ — deployment view (өөрийн орчноор соль)
+top to bottom direction
+node "КЛИЕНТ ОРЧИН\nБӨГЛӨХ: төхөөрөмж / браузер" {
+  artifact "Интерфейсийн instance" as ui
+}
+node "APPLICATION ОРЧИН\nБӨГЛӨХ: node / host / runtime" {
+  artifact "API-ийн instance" as api
+}
+node "DATA ОРЧИН\nБӨГЛӨХ: node / database server" {
+  database "Өгөгдлийн сангийн instance" as db
+}
+ui --> api : БӨГЛӨХ: протокол / хамгаалалт
+api --> db : БӨГЛӨХ: протокол / хамгаалалт
+legend bottom
+Node = дэд бүтцийн орчин; instance = тэнд ажиллах хэсэг.
+Энэ нь төлөвлөсөн generic жишээ, байршуулсан систем биш.
+Development / test / production ялгааг өөрийнхөөрөө тэмдэглэ.
+endlegend
+@enduml

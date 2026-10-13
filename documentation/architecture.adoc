@@ -1,0 +1,52 @@
+= {project-name} — архитектурын баримт
+:project-name: Төслийн нэр
+:revnumber: 0.1.0-mn
+:revdate: 2026-10-13
+include::arc42/_config.adoc[]
+
+[IMPORTANT]
+====
+Энэ бол Монгол хэл дээрх *бөглөх starter*; бэлэн системийн архитектурын тайлан биш. “БӨГЛӨХ” тэмдэглэгээг өөрийн төслийн мэдээллээр соль. Жишээ зураг бүр зөвхөн бүтэц харуулна.
+====
+
+Архитектурын баримт бэлтгэхдээ төслийн нэр, шаардлага, бодит код, шийдвэр, нотолгоонд тулгуурла. §1 нь зорилго, §3 нь системийн хил, §5 нь бүтэц, §6 нь ажиллагаа, §7 нь байрлалыг тайлбарлана. Бүх 12 хэсгийг ижил хэмжээнд дэлгэрүүлэх шаардлагагүй.
+
+Эх файлууд `documentation/arc42/` дотор; үндсэн файл тэдгээрийг `include`-ээр нэгтгэнэ. `npm run build` HTML үүсгэж, засварласан баримтыг браузераар унших боломж олгоно. Агуулгын холбоосоор section руу үсэрнэ.
+
+:numbered:
+
+include::arc42/01_introduction_and_goals.adoc[]
+
+include::arc42/02_architecture_constraints.adoc[]
+
+include::arc42/03_context_and_scope.adoc[]
+
+include::arc42/04_solution_strategy.adoc[]
+
+include::arc42/05_building_block_view.adoc[]
+
+include::arc42/06_runtime_view.adoc[]
+
+include::arc42/07_deployment_view.adoc[]
+
+include::arc42/08_concepts.adoc[]
+
+include::arc42/09_architecture_decisions.adoc[]
+
+include::arc42/10_quality_requirements.adoc[]
+
+include::arc42/11_technical_risks.adoc[]
+
+include::arc42/12_glossary.adoc[]
+
+[appendix]
+== Эх сурвалж ба хөрвүүлгийн тухай
+
+* https://arc42.org/overview/[arc42-ийн албан ёсны 12 хэсгийн бүтэц], section бүрийн албан ёсны зааврын холбоос тухайн хэсэгт бий.
+* https://c4model.com/[C4 model]: Context → §3; Container/шаардлагатай Component → §5; Dynamic/sequence → §6; Deployment → §7.
+* https://docs.asciidoctor.org/asciidoctor.js/latest/[Asciidoctor.js]: AsciiDoc source-оос HTML хөрвүүлэх хэрэгсэл.
+* https://github.com/bitsmuggler/arc42-c4-software-architecture-documentation-example[arc42 + C4 starter example] нь Docs-as-Code санааны reference; banking example-ийг энэ starter-д оруулаагүй.
+
+arc42 © Gernot Starke, Peter Hruschka. Энэ нь албан бус Монгол adaptation: товч заавар, бөглөх хүснэгтүүд болон жишээ зураг нэмсэн; албан ёсны баталгаажсан орчуулга биш. Template-ийн бүтэц, заавар: https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0]. Дотор нь бичих өөрийн системийн агуулгын эрх тусдаа.
+
+Хөрвүүлгийн огноо: 2026-10-13. AI assistance: Codex; албан ёсны arc42 section docs-той тулгасан draft. Монгол хэлний human review хүлээгдэж байна.

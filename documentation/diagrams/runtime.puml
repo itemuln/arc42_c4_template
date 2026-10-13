@@ -1,0 +1,31 @@
+@startuml
+!pragma layout smetana
+skinparam defaultFontName sans-serif
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam wrapWidth 240
+skinparam maxMessageSize 180
+skinparam rectangle {
+  BackgroundColor #438dd5
+  FontColor white
+  BorderColor #08427b
+}
+skinparam actor {
+  FontColor #08427b
+}
+title ЖИШЭЭ — runtime scenario (өөрийн ажиллагаагаар соль)
+actor "Оролцогч" as user
+participant "Интерфейс" as ui
+participant "Үйлчилгээ" as api
+database "Өгөгдлийн сан" as db
+user -> ui : 1. БӨГЛӨХ: үйлдэл
+ui -> api : 2. БӨГЛӨХ: хүсэлт
+api -> db : 3. БӨГЛӨХ: query / command
+db --> api : 4. БӨГЛӨХ: үр дүн
+api --> ui : 5. БӨГЛӨХ: хариу
+ui --> user : 6. БӨГЛӨХ: feedback
+note over ui,db
+Энэ нь дарааллыг харуулах жишээ.
+Runtime test PASS гэсэн нотолгоо биш.
+end note
+@enduml
