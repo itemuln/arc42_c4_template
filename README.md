@@ -2,7 +2,7 @@
 
 [HTML загварыг нээх](https://itemuln.github.io/arc42_c4_template/) · [arc42](https://arc42.org/overview/) · [C4](https://c4model.com/)
 
-Өөрийн software architecture documentation-ийг Монгол хэлээр эхлүүлэх **хоосон starter**. 12 хэсэг бүр товч заавар, бөглөх талбар/хүснэгт, official section холбоостой. Агуулгаа AsciiDoc файлуудад бичиж, HTML болгон үүсгэнэ. Энэ repository нь бэлэн системийн тайлан биш.
+Өөрийн software architecture documentation-ийг Монгол хэлээр эхлүүлэх starter. 12 хэсэг бүр товч заавар, бөглөх талбар/хүснэгт, official section холбоостой. Агуулгаа AsciiDoc файлуудад бичиж, HTML болгон үүсгэнэ. Энэ repository нь бэлэн системийн тайлан биш.
 
 ## Шууд эхлэх
 
